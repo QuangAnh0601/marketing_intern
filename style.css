@@ -1,0 +1,462 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Literata', serif;
+    font-size: 20px;
+    font-weight: 500;
+    word-spacing: 2px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 5rem;
+    color: #46677B;
+}
+
+/* Hero */
+
+.hero {
+    background-image: url("./images/building.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    position: relative;
+}
+
+.hero .bg-mask {
+    width: 100%;
+    height: 100%;
+    background-color: #46677B;
+    opacity: 0.8;
+    position: absolute;
+    /* z-index: 0; */
+}
+
+.hero .introduction {
+    position: absolute;
+    color: #D9D9D9;
+    left: 9%;
+    top: 20%;
+}
+
+.hero .introduction h1 {
+    color: #D9D9D9;
+}
+
+.hero .introduction h2 {
+    font-family: 'Literata', serif;;
+    font-weight: 900;
+    padding-bottom: 3rem;
+    width: 70%;
+    border-bottom: 4px solid #FFDE59;
+    /* word-spacing: 10px; */
+    letter-spacing: 3px;
+}
+
+/* greeting */
+
+.greeting .half-circle {
+    height: 500px;
+    width: 500px;
+    border: 5px solid #FFDE59;
+    border-radius: 50%;
+    position: absolute;
+    left: -100px;
+    z-index: -1;
+}
+
+.img-tag {
+    background-color: #FFDE59;
+    width: 500px;
+    height: 800px;
+    border-top-right-radius: 500px;
+    border-top-left-radius: 500px;
+    padding: 10px;
+}
+
+.img-tag img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.greeting h1 {
+    color: #46677B;
+}
+
+.greeting p {
+    font-size: 1.5rem;
+}
+
+/* feature section */
+
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.75rem;
+    background-color: #FFDE59;
+}
+
+.feature .icon-link {
+    color: #FCD24F;
+    text-decoration-color: #FCD24F;
+    font-size: 1.5rem;
+}
+
+/* contact section */
+
+.contact {
+    position: relative;
+    overflow: hidden;
+    height: 700px;
+}
+
+.contact .content {
+    width: 60%;
+}
+.contact p {
+    font-size: 1.5rem;
+}
+
+.contact .mail-section {
+    margin: 3rem auto;
+}
+
+.contact .mail-section .mail-button {
+    background-color: #FCD24F;
+    font-size: 2rem;
+    padding: 0.8rem 3rem;
+    border: 6px solid #46677B;
+    border-radius: 100px;
+    text-decoration: none;
+    color: #46677B;
+    box-shadow: #FCD24F 0px 10px 10px 0px;
+}
+
+.contact .right-half-circle {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    right: -20%;
+    top: -40px;
+    border: 20px solid #FCD24F;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 2rem;
+
+}
+.contact .right-half-circle img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* footer section */
+
+.footer {
+    height: 300px;
+    background-color: #46677B;
+    color: #D9D9D9;
+}
+
+.footer h3 {
+    font-weight: 600;
+    word-spacing: 3px;
+    letter-spacing: 0.5px;
+} 
+
+.footer a {
+    text-decoration: none;
+    color: #D9D9D9;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.footer .social-information a {
+    margin-right: 20px;
+}
+
+/* ------- Media Query -------- */
+
+@media (max-width: 318px) {
+    h1 {
+        font-size: calc(2rem + 4vw);
+    }
+    .hero {
+        height: 40vh;
+    }
+
+    .greeting .half-circle {
+        display: none;
+    }
+
+    .img-tag {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #FCD24F;
+    }
+
+
+    .contact {
+        position: relative;
+        overflow: hidden;
+        height: unset;
+    }
+
+    .contact .content {
+        width: 100%;
+    }
+
+    .contact .right-half-circle {
+        display: none;
+    }
+
+    .contact .mail-section .mail-button {
+        padding: 0.2rem 1rem;
+    }
+}
+
+/* Mobile Devices */
+@media (min-width: 319px) and (max-width: 480px) {
+        h1 {
+            font-size: calc(2rem + 4vw);
+        }
+        .hero {
+            height: 50vw;
+        }
+        .hero .introduction h1 {
+            font-size: calc(1em + 5vw);
+        }
+        .hero .introduction h2 {
+            font-size: calc(0.8em + 2vw);
+            padding-bottom: calc(0.5rem + 1vw);
+        }
+
+        .greeting .half-circle {
+            display: none;
+        }
+
+        .img-tag {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #FCD24F;
+        }
+
+
+        .contact {
+            position: relative;
+            overflow: hidden;
+            height: unset;
+        }
+
+        .contact .content {
+            width: 100%;
+        }
+
+        .contact .right-half-circle {
+            display: none;
+        }
+
+        .contact .mail-section .mail-button {
+            padding: 0.2rem 1rem;
+        }
+    }
+
+    /* iPads and Tablets */
+    @media (min-width: 481px) and (max-width: 575px) {
+        h1 {
+            font-size: calc(2rem + 5vw);
+        }
+
+        .hero {
+            height: 50vw;
+        }
+        .hero .introduction h1 {
+            font-size: calc(1rem + 7vw);
+        }
+        .hero .introduction h2 {
+            font-size: calc(0.5rem + 4vw);
+            padding-bottom: calc(1rem + 1vw);
+        }
+
+        .greeting .half-circle {
+            display: none;
+        }
+
+        .img-tag {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #FCD24F;
+        }
+
+
+        .contact {
+            position: relative;
+            overflow: hidden;
+            height: unset;
+        }
+
+        .contact .content {
+            width: 100%;
+        }
+
+        .contact .right-half-circle {
+            display: none;
+        }
+
+        .contact .mail-section .mail-button {
+            padding: 0.5rem 2rem;
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 767px) {
+        .hero {
+            height: 50vw;
+        }
+        .hero .introduction h1 {
+            font-size: calc(1rem + 7vw);
+        }
+        .hero .introduction h2 {
+            font-size: calc(0.5rem + 4vw);
+            padding-bottom: calc(1rem + 1vw);
+        }
+
+        .greeting .half-circle {
+            display: none;
+        }
+
+        .img-tag {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #FCD24F;
+        }
+
+
+        .contact {
+            position: relative;
+            overflow: hidden;
+            height: unset;
+        }
+
+        .contact .content {
+            width: 100%;
+        }
+
+        .contact .right-half-circle {
+            display: none;
+        }
+
+    }
+
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .hero {
+            height: 50vw;
+        }
+        .hero .introduction h1 {
+            font-size: calc(1rem + 7vw);
+        }
+        .hero .introduction h2 {
+            font-size: calc(0.5rem + 4vw);
+            padding-bottom: calc(1rem + 1vw);
+        }
+
+        .greeting .half-circle {
+            display: none;
+        }
+
+        .img-tag {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: #FCD24F;
+        }
+
+
+        .contact {
+            position: relative;
+            overflow: hidden;
+            height: unset;
+        }
+
+        .contact .content {
+            width: 100%;
+        }
+
+        .contact .right-half-circle {
+            display: none;
+        }
+
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+        .hero {
+            height: 80vh;
+        }
+        .hero .introduction h1 {
+            font-size: calc(1rem + 7vw);
+        }
+        .hero .introduction h2 {
+            font-size: calc(0.5rem + 4vw);
+            padding-bottom: calc(1rem + 1vw);
+        }
+
+        .greeting .half-circle {
+            height: 400px;
+            width: 400px;
+        }
+        
+        .img-tag{
+            width: 350px;
+            height: 600px;
+        }
+
+
+        .contact {
+            position: relative;
+            overflow: hidden;
+            height: 500px;
+        }
+
+        .contact .right-half-circle {
+            width: 600px;
+            height: 600px;
+        }
+
+    }
+
+    /* Laptops */
+    @media (min-width: 1201px) and (max-width: 1600px){
+        .hero .introduction {
+            top: 15%;
+        }
+        .hero .introduction h1 {
+            font-size: calc(4rem + 5vw);
+        }
+        .introduction h2 {
+            font-size: calc(2rem + 4vw);
+        }
+    }
+
+    /* Desktops */
+    @media (min-width: 1601px) {
+        .hero .introduction h1 {
+            font-size: calc(6rem + 4vw);
+        }
+        .introduction h2 {
+            font-size: calc(3rem + 3vw);
+        }
+
+        .greeting .half-circle {
+            height: calc(500px + 12vw);
+            width: calc(500px + 12vw);
+        }
+    }
